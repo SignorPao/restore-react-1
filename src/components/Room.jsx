@@ -25,7 +25,9 @@ const Room = ({ room }) => {
             </div>
             <div className="flex gap-x-1">
               <div>Size</div>
-              <div>{size}m2</div>
+              <div>
+                {size}m<sup>2</sup>
+              </div>
             </div>
           </div>
 
