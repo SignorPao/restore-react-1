@@ -44,7 +44,7 @@ const Header = () => {
           <a href="#!" className="hover:text-accent transition-all">
             Spa
           </a>
-          <a href="#!" className="hover:text-accent transition-all">
+          <a href="#contact" className="hover:text-accent transition-all">
             Contact
           </a>
         </nav>
