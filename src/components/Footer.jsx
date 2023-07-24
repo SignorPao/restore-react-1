@@ -23,6 +23,8 @@ const Footer = () => {
           Powered by{" "}
           <a
             href="https://pavelbelousov.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-accent transition-all ease-in"
           >
             @signorPao
