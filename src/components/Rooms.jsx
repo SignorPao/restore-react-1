@@ -18,7 +18,7 @@ const Rooms = () => {
       )}
       <div className="container mx-auto lg:px-0">
         <div className="text-center">
-          <div className="font-tertiary uppercase text-xs lg:text-[15px] tracking-[3px] lg:tracking-[6px]">Hotel & Spa Adina</div>
+          <div className="font-tertiary uppercase text-xs lg:text-[15px] tracking-[3px] lg:tracking-[6px] mb-2">Hotel & Spa Adina</div>
           <h2 className="font-primary text-3xl lg:text-[45px] mb-4">Room & Suites</h2>
         </div>
 
