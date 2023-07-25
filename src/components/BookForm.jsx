@@ -12,7 +12,7 @@ const BookForm = () => {
 
   return (
     <form className="h-[300px] w-full lg:h-[70px]">
-      <div className="flex flex-col h-full w-full lg:flex-row">
+      <div className="flex flex-col gap-y-4 lg:gap-y-0 h-full w-full lg:flex-row">
         <div className="flex-1 border-r">
           <CheckIn />
         </div>
@@ -28,7 +28,7 @@ const BookForm = () => {
 
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-primary flex-1"
           onClick={(e) => handleClick(e)}
         >
           Check now

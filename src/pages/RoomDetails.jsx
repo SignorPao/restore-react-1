@@ -5,6 +5,7 @@ import AdultsDropDown from "../components/AdultsDropdown";
 import KidsDropDown from "../components/KidsDropdown";
 import CheckIn from "../components/CheckIn";
 import CheckOut from "../components/CheckOut";
+import ScrollToTop from '../components/ScrollToTop'
 
 import { RoomContext } from "../context/RoomContext";
 
@@ -22,6 +23,7 @@ const RoomDetails = () => {
 
   return (
     <section>
+      <ScrollToTop/>
       <div className="bg-room bg-cover bg-center h-[560px] relative flex justify-center items-center">
         <div className="absolute w-full h-full bg-black/50" />
         <h1 className="text-white z-20 text-center text-3xl lg:text-6xl font-primary capitalize tracking-[1px] lg:tracking-[2px]">
@@ -64,7 +66,7 @@ const RoomDetails = () => {
           <div className="w-full h-full lg:w-[40%] mb-12 lg:pl-4">
             <div className="py-8 px-4 bg-accent/20">
               <div className="flex flex-col gap-y-4 mb-4">
-                <h3>Your reservation</h3>
+                <h3 className="h3">Your reservation</h3>
                 <div className="h-[60px]">
                   <CheckIn />
                 </div>
@@ -81,6 +83,32 @@ const RoomDetails = () => {
                   book now for ${price}
                 </button>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="h3">Hotel rules</h3>
+              <p className="mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Assumenda, reiciendis. Dolorum, rerum.
+              </p>
+              <ul className="flex flex-col gap-y-4">
+                <li className="flex gap-x-2 items-center">
+                  <FaCheck className="text-accent" />
+                  Check-in: 3:00 PM - 9:00 PM
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <FaCheck className="text-accent" />
+                  Check-out: 10:30 AM
+                </li>
+                <li className="flex gap-x-2 items-center capitalize">
+                  <FaCheck className="text-accent" />
+                  No pets
+                </li>
+                <li className="flex gap-x-2 items-center capitalize">
+                  <FaCheck className="text-accent" />
+                  No smoking
+                </li>
+              </ul>
             </div>
           </div>
         </div>

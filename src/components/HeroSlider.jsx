@@ -54,9 +54,9 @@ const HeroSlider = () => {
               <h1 className="text-3xl lg:text-6xl font-primary uppercase tracking-[1px] lg:tracking-[2px] max-w-[920px] leading-tight mb-6">
                 {title}
               </h1>
-              <button className="btn btn-lg btn-primary mx-auto">
-                <a href="#rooms">{btnText}</a>
-              </button>
+              <a href="#rooms" className="btn btn-lg btn-primary mx-auto w-fit">
+                {btnText}
+              </a>
             </div>
 
             <div className="absolute top-0 w-full h-full">
